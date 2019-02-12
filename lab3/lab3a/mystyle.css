@@ -1,0 +1,35 @@
+body{
+	font-family: Candara, Verdana, sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: Arial, Helvetica, sans-serif;
+}
+table{
+	border: 1px solid #000000;
+	padding: 10px 10px 10px 10px;
+}
+table > caption{
+	text-align: left;
+	font-weight: bold;
+}
+.tabell1{
+	background-color: #ffcccc;
+}
+.tabell2{
+	background-color:#ffcc99;
+}
+.tabell2 > thead > tr > th{
+	border-bottom: 1px solid #000000;
+	text-align: left;
+}
+.foot{
+	color: #ffffff;
+	background-color: #000000;;
+}
+p#source{
+	text-align: right;
+	color: #009900;
+}
+a:hover{
+	color: #000000;
+}
