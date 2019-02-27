@@ -1,0 +1,80 @@
+#name {
+	text-shadow: 2px 2px 4px #333333;
+}
+#links {
+	background: #ff33cc;
+	margin: 0 30% 0 30%;
+	font-size: 15px;
+}
+p {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 20px;
+}
+div {
+	margin: auto;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.Top {
+	margin: 0 10% 10px 10%
+}
+* {
+	box-sizing: border-box;
+}
+.Center {
+	border: 1px solid #000000;
+    background-color: #f1f1f1;
+	box-shadow: 2px 2px 4px #333333;
+	padding: 10px;
+	overflow: hidden;
+}
+.content{
+	text-align: left;
+	padding: 10px 10px 0 10px;
+}
+#profile {
+	height: 226px;
+	width: 200px;
+}
+.Bottom {
+	position: relative;
+	background: #333333;
+	height: 100px;
+}
+.Bottom>i {
+	position: relative;
+	bottom: -10px;
+	padding: 0 10px 0 10px;
+}
+.last {
+	position: relative;
+	left: 50%;
+	bottom: -30%;
+}
+#last {
+	position: relative;
+	left: -50%;
+	font-size: 10px;
+	color: #ffffff;
+}
+.fa {
+	padding: 10px;
+	font-size: 20px;
+	width: 40px;
+	text-decoration: none;
+	border-radius: 50%;
+	color: white;
+}
+.fa:hover {
+	opacity: 0.7;
+}
+.fa-facebook {
+	background: #3B5998;
+}
+.fa-instagram {
+	background: #125688;
+}
+.fa-github {
+	background: #ffffff;
+	color: #000000;
+}
