@@ -27,25 +27,25 @@ header {
 #title {
 	text-shadow: 2px 2px 4px var(--Gray);
 }
-.list_top ul {
+.list_menu ul {
 	list-style-type: none;
 	overflow: hidden;
 	background-color: var(--Gray);
 	margin: 0 30% 0 30%;
 	padding: 0;
 }
-.list_top ul li {
+.list_menu ul li {
 	float: left;
 	width: 50%;
 }
-.list_top ul li a {
+.list_menu ul li a {
 	display: block;
 	color: var(--White);
 	text-align: center;
 	text-decoration: none;
 	padding: 10px;
 }
-.list_top li a:hover {
+.list_menu li a:hover {
 	background-color: #111111;
 }
 /*Header end*/
@@ -56,6 +56,7 @@ section {
 	background-color: #f1f1f1;
 	box-shadow: 2px 2px 4px var(--Gray);
 	padding: 10px;
+	width: 80%;
 	overflow: hidden;
 }
 .content {
@@ -74,10 +75,10 @@ footer {
 	background: var(--Gray);
 	height: 100px;
 }
-footer>i {
+footer>span{
 	position: relative;
 	bottom: -10px;
-	padding: 0 10px 0 10px;
+	margin: 0 5px 0 5px;
 }
 .last {
 	position: relative;

@@ -4,19 +4,23 @@
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<link href="style/style.css" rel="stylesheet" type="text/css">
-	<link rel="shortcut icon" type="image/x-icon" href="img/*.ico" />
+	<link rel="shortcut icon" type="image/x-icon" href="img/C_icon.ico" />
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<!--#1. title. title elementet används för att namnet på ett html dokument 
+	detta visas i webbläsaren titel flik-->
 	<title>Presentation</title>
 </head>
 <body>
 
 	<header class="Top">
-		<p></p>
+		<!--#2. h1. h1-h6 används för att göra rubriker-->
 		<h1 id="title">Presentation</h1>
-		<p></p>
 		<!--styla upp en meny med hjälp av en unordered list-->
-		<nav class="list_top">
-			<ul >
+		<nav class="list_menu">
+			<!--#9 ul. ul taggen anger en lista vanligtvis blir det en punktlista-->
+			<ul>
+				<!--#4. a. a taggen används föra att definiera hyperlänkar tillsammans med 
+				attributet href som anger själva länken-->
 				<li><a href="index.html">Presentation</a></li>
 				<li><a href="analys.html">Analysis</a></li>
 			</ul>
@@ -25,22 +29,63 @@
 	
 	<section class="Center">
 		<div class="content pic">
-			<img alt="Micke" id="profile" src="img/*.png">
+			<!--#5. img. img taggen definierar en bild. img har några nödvändiga attribut 
+			som alt och src-->
+			<img alt="Micke" id="profile" src="img/micke.png" height="452px" width="400px">
 		</div>
 		
 		<div class="content text">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur mauris sit amet nunc euismod, vel scelerisque sem mattis. Sed lacinia est nisi, et condimentum lectus dictum ut. Proin laoreet purus et turpis posuere, nec rhoncus dolor mollis. Donec mi diam, blandit ut est vitae, varius congue nunc. Phasellus fermentum ut eros id gravida. Etiam porta, dolor sed molestie dignissim, sem ante pulvinar eros, id mollis urna nisi nec arcu. Sed in auctor neque. Donec nec efficitur quam, aliquet pulvinar sem. Praesent massa metus, bibendum non velit ac, hendrerit egestas sem. Vestibulum est odio, mattis et tincidunt in, blandit condimentum sapien. Etiam tristique metus eget pellentesque consequat. Nulla fringilla arcu id malesuada semper. Phasellus auctor lectus in lacus interdum, eu lobortis sem congue. Ut interdum vitae elit a luctus. Nulla vel auctor libero, a dapibus odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+			<!--#3. p. paragrafer görs med hjälp av p taggen-->
+			<p>
+				Jag heter Mikael Leuf jag är 21 år, född och uppväxt i Härnösand. Jag älskar teknik och allehanda gadgets. därför valde jag att gå teknik linjen på Härnösands gymnasium. 
+				Den valda inriktningen blev information och mediateknik sedan utökade jag med teknikcollege för att kunna gå lite praktiska ämnen, detta var en mycket rolig tid och roliga ämnen några av vilka var c# mycket matte samt webbutveckling. 
+				efter gymnasiet ville jag fortsätta på ungefär samma spår och matte är kul. 
+				
+				Jag valde då att resa genom halva sverige och läser just nu till civilingengör i spel och programaruteknik första året på BTH.
+				Där läser jag mycket matte och programering.
+				utöver de läser jag några fristående kurser på högskolan i dalarna, UMU och LTU. där ingår 3d cad och dataspel i lärnade. 
+				några kompetenser jag har akumulerat under min studie tid förjer nedan
+				<!--#8. table. definierar en tabel med table head "header" table row och tabel data "data celler" -->
+				<table style="width:30%">
+					<tr>
+						<th>Språk</th>
+						<th>Programering</th>
+						<th>3d modelering</th>
+					</tr>
+					<tr>
+						<td>svenska</td>
+						<td>Python</td>
+						<td>CAD/Auto cad</td>
+					</tr>
+					<tr>
+						<td>Engelska</td>
+						<td>c/c++/c#</td>
+
+					</tr>
+					<tr>
+						<td></td>
+						<td>HTML/CSS</td>
+					</tr>
+				</table>
+			</p>
+			<p>
+				
+				På fritiden spenderar jag stor del framför datorn och antingen spelar dator spel och/eller pratar med kompisar över internet.
+				Andra hobbys är att spela musik eller kampa. Jag spelar saxofån i en orkester (har gjort i 14år), detta har varit en både lärorik rolig aktivitet jag har fått varit med om uttlands resor
+				och framört storslagna framträdanden tillsammans med hundratals andra musiker.
+				att kampa eller hajka tillsamman med kompisar är blad de trvligaste som finns. jag brukade åka minst en gång i månaden ut till antingen någon stuga eller vandra ut i skog och mark med ett scout gäng 
+			</p>
 		</div>
-		
+
 	</section>
 	
 	<footer class="Bottom fa-lg">
-		<i><a class="fa fa-facebook" href="*"></a></i> 
-		<i><a class="fa fa-instagram" href="*"></a></i> 
-		<i><a class="fa fa-github" href="*"></a></i>
+		<span><a class="fa fa-facebook" href="https://www.facebook.com/mikael.leuf"></a></span>
+		<span><a class="fa fa-instagram" href="https://www.instagram.com/eclaireur/"></a></span>
+		<span><a class="fa fa-github" href="https://github.com/Miheel"></a></span>
 		
 		<div class="last">
-			<p id="last">Star</p>
+			<p id="last">© Mikael Leuf </p>
 		</div>
 		
 	</footer>
