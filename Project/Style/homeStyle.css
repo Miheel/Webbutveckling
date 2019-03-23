@@ -1,0 +1,43 @@
+.hub_wrapper {
+	text-align: center;
+	/*Center the icons*/
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.hub {
+	display: inline-block;
+}
+.top_hub, .bot_hub {
+	/*center the icons over and under title*/
+	display: inline-block;
+}
+a {
+	display: block;
+	margin: 10px;
+	float: left;
+}
+img {
+	display: inherit;
+	margin: auto;
+}
+.hub_ico {
+	opacity: 0.6;
+}
+.hub_btn {
+	width: 150px;
+	height: 150px;
+}
+.txt {
+	width: 100px;
+	height: 28px;
+}
+.hub_btn:hover, .txt:hover {
+	/*fade effect over the icons*/
+	opacity: 1;
+	transition: .5s ease;
+}
+.title_btn {
+	width: auto;
+	height: auto;
+}

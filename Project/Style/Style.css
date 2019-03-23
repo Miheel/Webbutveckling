@@ -1,94 +1,93 @@
-body{	
-
+body {
 	background-image: url("../Resources/Wallpaper.jpg");
 	color: #ffffff;
 }
-.body{
+.body {
 	background: rgba(0, 0, 0, 0.5);
-	width:80%;
-	height:50%;
+	width: 80%;
+	height: 50%;
 	overflow: hidden;
 	padding: 10px;
 	margin: auto;
 	box-shadow: 2px 2px 4px #333333;
 }
-header{
+header {
 	background: rgba(51, 51, 51, 0.5);
-	border-radius: 0 0 5px 5px; 
-	margin-bottom:10px;
+	border-radius: 0 0 5px 5px;
+	margin-bottom: 10px;
 }
-.loggo{
+.loggo {
 	display: block;
 	margin: auto;
 	width: 187px;
 	height: 187px;
 }
-
 /*------------MENU------------*/
-nav{
-  color: #000000;
-  display:block;
+nav {
+	color: #000000;
+	display: block;
 }
-ul{
-  color: #ffffff;
-  list-style-type: none;
-  overflow: hidden;
-  background-color: #333333;
-  margin: auto;
-  padding: 0;
-  width: 50%;
+.menu {
+	color: #ffffff;
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #333333;
+	margin: auto;
+	padding: 0;
+	width: 50%;
 }
-li{
-	float:left;
+.menuI {
+	float: left;
 }
-.ip{
+.ip {
 	float: right;
 	background-color: #111111;
 }
-li a, li a:visited, li a:hover, li a:active, .ip{
-  display: inline-block;
-  text-align: center;
-  text-decoration:none;
-  color: #ffffff;
-  padding: 10px;
+.menuI a, .menuI a:visited, .menuI a:hover, .menuI a:active, .ip {
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	padding: 10px;
 }
-li.dropdown{
-  display: inline-block;
+.menuI.dropdown {
+	display: inline-block;
 }
-.dropdown-content{
-  display: none;
-  position: absolute;
-  background-color: #333333;
-  box-shadow: 1px 1px 5px #333333;
-  z-index: 1;
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #333333;
+	box-shadow: 1px 1px 5px #333333;
+	z-index: 1;
 }
 .dropdown-content a {
-  display: block;
+	display: block;
 }
-.menu:hover{
-  background-color: #111111;
+.menu:hover {
+	background-color: #111111;
 }
 .dropdown:hover .dropdown-content {
-  display: block;
+	display: block;
 }
-
 /*------------CONTENT------------*/
-section{
+
+section {
+	height: 100vh;
 	background: rgba(0, 0, 0, 0.5);
 	border: 1px solid #000000;
-	border-radius: 5px 5px 5px 5px; 
+	border-radius: 5px 5px 5px 5px;
 }
-
 /*------------FOOTER------------*/
+
 footer {
 	position: relative;
 	background: #333333;
 	height: 100px;
 }
-.last {
+.copy {
 	position: relative;
 	bottom: -80%;
-	text-align:center;
+	text-align: center;
 	font-size: 15px;
 	color: #ffffff;
 }
