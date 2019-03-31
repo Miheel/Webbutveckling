@@ -1,5 +1,8 @@
 body {
 	background-image: url("../Resources/Wallpaper.jpg");
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	background-size: cover;
 	color: #ffffff;
 }
 .body {
@@ -19,6 +22,7 @@ header {
 .loggo {
 	display: block;
 	margin: auto;
+	padding-top: 5px;
 	width: 187px;
 	height: 187px;
 }
@@ -43,12 +47,19 @@ nav {
 	float: right;
 	background-color: #111111;
 }
-.menuI a, .menuI a:visited, .menuI a:hover, .menuI a:active, .ip {
+.menuI a, .ip {
 	display: inline-block;
-	text-align: center;
+	text-align: left;
 	text-decoration: none;
 	color: #ffffff;
 	padding: 10px;
+}
+.menuI a:visited, .menuI a:hover, .menuI a:active {
+	text-decoration: none;
+	color: #ffffff;
+}
+.menuI:hover {
+	background-color: #111111;
 }
 .menuI.dropdown {
 	display: inline-block;
@@ -60,26 +71,58 @@ nav {
 	box-shadow: 1px 1px 5px #333333;
 	z-index: 1;
 }
-.dropdown-content a {
+.dropdown:hover .dropdown-content, .dropdown-content a {
 	display: block;
 }
-.menu:hover {
+.dropdown-content a:hover{
 	background-color: #111111;
 }
-.dropdown:hover .dropdown-content {
-	display: block;
-}
+	
 /*------------CONTENT------------*/
-
-section {
+section{
 	height: 100vh;
 	background: rgba(0, 0, 0, 0.5);
 	border: 1px solid #000000;
 	border-radius: 5px 5px 5px 5px;
+	padding:10px;
+	display:flex;
 }
-/*------------FOOTER------------*/
+aside, .staff_wrapper{
+	background: inherit;
+	border: inherit;
+	float:left;
+	padding:inherit;
+	margin:5px;
 
-footer {
+}
+.status_up{
+	content:url("../Resources/Green_check.png");
+}
+.status_down{
+	content:url("../Resources/Red_cross.png");
+}
+
+.staff_outer{
+	background-color:#333333;
+	/*border:1px solid red;*/
+	border-radius:5px 5px 5px 5px;
+	display:inline-block;
+	min-width:250px;
+	max-width:250px;
+	text-align:center;
+	padding-top:10px;
+	margin:10px 10px;
+}
+.staff_inner{
+	background-color:#111111;
+	/*border:1px solid red;*/
+	border-radius:0 0 5px 5px;
+	text-align:left;
+	padding:10px 10px;
+}
+
+/*------------FOOTER------------*/
+.Bottom {
 	position: relative;
 	background: #333333;
 	height: 100px;
