@@ -1,9 +1,11 @@
 .hub_wrapper {
 	text-align: center;
 	/*Center the icons*/
-	position: relative;
+	position:absolute;
 	top: 50%;
-	transform: translateY(-50%);
+	transform: translate(-50%, -50%);
+	left: 50%;
+	
 }
 .hub {
 	display: inline-block;

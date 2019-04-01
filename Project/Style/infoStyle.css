@@ -1,0 +1,41 @@
+.side, .staff_wrapper{
+	background: inherit;
+	border: inherit;
+	float:left;
+	padding:inherit;
+	margin:5px;
+
+}
+.side{
+	min-width:200px;
+	max-width:250px;
+}
+.staff_wrapper{
+	
+}
+	
+.status_up{
+	content:url("../Resources/Green_check.png");
+}
+.status_down{
+	content:url("../Resources/Red_cross.png");
+}
+
+.staff_outer{
+	background-color:#333333;
+	/*border:1px solid red;*/
+	border-radius:5px 5px 5px 5px;
+	display:inline-block;
+	min-width:250px;
+	max-width:250px;
+	text-align:center;
+	padding-top:10px;
+	margin:10px 10px;
+}
+.staff_inner{
+	background-color:#111111;
+	/*border:1px solid red;*/
+	border-radius:0 0 5px 5px;
+	text-align:left;
+	padding:10px 10px;
+}
