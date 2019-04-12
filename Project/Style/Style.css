@@ -84,6 +84,7 @@ section{
 	border: 1px solid #000000;
 	border-radius: 5px 5px 5px 5px;
 	padding:10px;
+	display:flex;
 }
 
 /*------------Clearfix------------*/
