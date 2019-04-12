@@ -4,20 +4,28 @@ body{
 h1, h2, h3, h4, h5, h6{
 	font-family: Arial, Helvetica, sans-serif;
 }
+
+/*border Lägger en ram run de båda tabellerna samt 
+paddign lägger till ett lustrum mellan tabell kanten och de innre elementen*/
 table{
 	border: 1px solid #000000;
 	padding: 10px 10px 10px 10px;
 }
-table > caption{
+
+/*Lägger tabel rubriken till vänster och gör den till fet stil*/
+caption{
 	text-align: left;
 	font-weight: bold;
 }
+/*Sätter backgrunds färgen på det två tabellerna*/
 .tabell1{
 	background-color: #ffcccc;
 }
 .tabell2{
 	background-color:#ffcc99;
 }
+/*border-bottom lägger en underline till tabel huvudet
+och shiftar texten till vänster*/
 .tabell2 > thead > tr > th{
 	border-bottom: 1px solid #000000;
 	text-align: left;
