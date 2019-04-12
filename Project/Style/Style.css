@@ -84,17 +84,15 @@ section{
 	border: 1px solid #000000;
 	border-radius: 5px 5px 5px 5px;
 	padding:10px;
-	display:flex;
 }
-
-/*------------Clearfix------------*/
-/*------------float problems------------*/
-section::after{
-	content: "";
-	clear: both;
-	display:table;
+.modes{
+	text-align:center;
 }
-
+.survival, .creative{
+	margin-top:50px;
+	max-width:100%;
+	height:auto;
+}
 
 /*------------FOOTER------------*/
 .Bottom {

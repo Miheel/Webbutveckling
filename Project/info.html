@@ -42,10 +42,12 @@
 		</header>
 		<section>
 			<div class="server-status">
-				<img class="" id="status" style="height:20px;width:20px;"> My awesome server is currently <span class="server-online" id="statusMsg"></span>!
+				<img class="" id="status" style="height:20px;width:20px;"> The server is currently <span class="server-online" id="statusMsg"></span>!
 			</div>
 			<script> 
+			
 			MinecraftAPI.getServerStatus('StarMC.ddns.net', {
+			//MinecraftAPI.getServerStatus('play.minesuperior.com', {
 				port: 25565 // optional, only if you need a custom port
 			}, function(err, status) {
 				if (err) {
