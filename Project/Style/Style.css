@@ -85,15 +85,6 @@ section{
 	border-radius: 5px 5px 5px 5px;
 	padding:10px;
 }
-.modes{
-	text-align:center;
-}
-.survival, .creative{
-	margin-top:50px;
-	max-width:100%;
-	height:auto;
-}
-
 /*------------FOOTER------------*/
 .Bottom {
 	position: relative;

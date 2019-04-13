@@ -1,6 +1,3 @@
-.staff{
-	display:flex;
-}
 /*------------Clearfix------------*/
 /*------------float problems------------*/
 .staff::after{
@@ -8,22 +5,38 @@
 	clear: both;
 	display:table;
 }
-.side, .staff_wrapper{
+.side, .staff_wrapper, .mode_wrapper, .info_wrapper{
+	min-height: 100vh;
+	min-width:250px;
 	background: inherit;
 	border: inherit;
-	float:left;
 	padding:inherit;
 	margin:5px;
 }
+
+/* "block formatting context" (BFC) make .side a float
+and let .staff_wrapper de an ordinary block  taking up all available space
+except the space occupied by and give it overflow:hidden.side*/
 .side{
-	min-width:200px;
 	max-width:250px;
+    overflow:hidden;
+	float:left;
 }
-.staff_wrapper{
+.staff_wrapper, .mode_wrapper, .info_wrapper{
 	text-align:center;
-	max-width:100%;
+	max-width:auto;
+    overflow:hidden;
 }
-	
+
+.modes{
+	text-align:center;
+}
+.survival, .creative{
+	margin-top:50px;
+	max-width:100%;
+	height:auto;
+}
+
 .status_up{
 	content:url("../Resources/Green_check.png");
 }
@@ -33,7 +46,6 @@
 
 .staff_outer{
 	background-color:#333333;
-	/*border:1px solid red;*/
 	border-radius:5px 5px 5px 5px;
 	display:inline-block;
 	min-width:250px;
@@ -44,7 +56,6 @@
 }
 .staff_inner{
 	background-color:#111111;
-	/*border:1px solid red;*/
 	border-radius:0 0 5px 5px;
 	text-align:left;
 	padding:10px 10px;
