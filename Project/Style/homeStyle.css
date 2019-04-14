@@ -1,13 +1,12 @@
 .hub_wrapper {
-	max-width:100%;
-	max-height:auto;
+	max-width: 100%;
+
 	text-align: center;
 	/*Center the icons*/
-	position:absolute;
+	position: absolute;
 	top: 50%;
 	transform: translate(-50%, -50%);
 	left: 50%;
-	
 }
 .hub {
 	display: inline-block;
@@ -32,7 +31,6 @@ img {
 	max-width: 150px;
 	height: 150px;
 }
-
 .txt {
 	max-width: 100px;
 	height: 28px;
@@ -43,7 +41,7 @@ img {
 	transition: .5s ease;
 }
 .title_ico {
-	border:1px solid red;
+	border: 1px solid red;
 	width: auto;
 	height: auto;
 }

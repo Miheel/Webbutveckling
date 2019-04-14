@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width", initial-scale="1.0" name="viewport">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<title>Form</title>
+</head>
+<body>
+	<h1>Suportformulär</h1>
+	<h5>Här kan du skicka ett ärende till vår supportavdeling</h5>
+	<form action="http://staff.www.ltu.se/~susfah/VT19/parse_form.php" method="post">
+		<div class="row">
+			<div class="col">
+				<label for="name"><span class="req_aster">*</span> Ditt namn:</label> 
+				<input autofocus="" class="txt_in" id="name" name="namn" placeholder="First name" required="" type="text"><br>
+				
+				<label for="tel"><span class="req_aster">*</span> Telefon:</label> 
+				<input class="txt_in" id="tel" name="telefon" placeholder="Telephone number" required="" type="tel"><br>
+				
+				<label for="prio">Prioritet:</label> <select class="s_list" id="prio" name="prioritet">
+					<option value="1">
+						Låg
+					</option>
+					<option value="2">
+						Normal
+					</option>
+					<option value="3">
+						Hög
+					</option>
+				</select><br>
+				
+				<fieldset class="radio">
+					<legend>Tilldela till ort:</legend> 
+					<input checked id="gbg" name="ort" type="radio" value="gbg">
+					<label for="gbg">Göteborg</label><br>
+
+					<input id="sthlm" name="ort" type="radio" value="sthlm">
+					<label for="sthlm">Stockholm</label><br>
+
+					<input id="ume" name="ort" type="radio" value="ume">
+					<label for="ume">Umeå</label><br>
+
+					<input id="lule" name="ort" type="radio" value="lule">
+					<label for="lule">Luleå</label>					
+				</fieldset><br>
+			</div>
+			
+			<div class="col">
+				<label for="kat">Kategori:</label> 
+				<select class="s_list" id="kat" name="kategori">
+					<option value="fakt">
+						Fakturering
+					</option>
+					<option value="net">
+						Internet
+					</option>
+					<option value="tel">
+						Telefoni
+					</option>
+					<option value="epost">
+						E-post
+					</option>
+				</select><br>
+				
+				<label for="rub"><span class="req_aster">*</span> Rubrik:</label> 
+				<input class="txt_in" id="rub" name="rubrik" placeholder="Rubrik" required="" type="text"><br>
+				
+				<label for="besk"><span class="req_aster">*</span> Beskrivning:</label> 
+				<textarea class="txt_in" cols="30" id="besk" name="beskrivning" placeholder="Beskriv ärendet" required="" rows="10"></textarea><br>
+				
+				<input name="skicka" type="submit" value="Submit"> 
+				<input type="reset" value="Reset">
+			</div>
+		</div>
+			<p> fields with <span class="req_aster">*</span> are required to be filled in</p>		
+	</form>
+</body>
+</html>

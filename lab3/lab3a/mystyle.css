@@ -1,6 +1,10 @@
+/*texten på sidan får dessa*/
 body{
 	font-family: Candara, Verdana, sans-serif;
 }
+/*all text i heading tagarna får dessa teckensnitt
+Areal blir default font resten blir ett fallback system 
+om den första inte är kompatibel med webbläsaren */
 h1, h2, h3, h4, h5, h6{
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -38,6 +42,7 @@ p#source{
 	text-align: right;
 	color: #009900;
 }
+/*hover aär en psudo-class som lägger till css style till alementet när musen pekar på elementet*/
 a:hover{
 	color: #000000;
 }

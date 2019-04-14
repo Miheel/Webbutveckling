@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<title>Form</title>
+</head>
+<body>
+
+	<h1>Suportformulär</h1>
+	<h5>Här kan du skicka ett ärende till vår supportavdeling</h5>
+	<form action="http://staff.www.ltu.se/~susfah/VT19/parse_form.php" method="POST">
+		<label for="name">Ditt namn:</label>
+		<input class="txt_in" id="name" type="text" name="namn"><br>
+		
+		<label for="tel">Telefon:</label>
+		<input class="txt_in" id="tel" type="tel" name="telefon"><br>
+		
+		<label for="prio">Prioritet:</label>
+		<select class="s_list" id="prio" name="prioritet">
+			<option value="1">Låg</option>
+			<option value="2">Normal</option>
+			<option value="3">Hög</option>
+		</select><br>
+		
+		<fieldset class="radio">
+			<legend>Tilldela till ort:</legend>
+			<input type="radio" name="ort" id="gbg" value="gbg" checked><label for="gbg">Göteborg</label><br>
+			<input type="radio" name="ort" id="sthlm" value="sthlm"><label for="sthlm">Stockholm</label><br>
+			<input type="radio" name="ort" id="ume" value="ume"><label for="ume">Umeå</label><br>
+			<input type="radio" name="ort" id="lule" value="lule"><label for="lule">Luleå</label>
+		</fieldset><br><br>
+		
+		<label for="kat">Kategori:</label>
+		<select class="s_list" id="kat" name="kategori">
+			<option value="fakt">Fakturering</option>
+			<option value="net">Internet</option>
+			<option value="tel">Telefoni</option>
+			<option value="epost">E-post</option>
+		</select><br>
+		
+		<label for="rub">Rubrik:</label>
+		<input class="txt_in" id="rub" type="text" name="rubrik"><br>
+		
+		<label for="besk">Beskrivning:</label>
+		<textarea class="txt_in" id="besk" name="beskrivning" rows="10" cols="30"></textarea><br>
+
+		<input type="submit" name="skicka" value="Submit">
+
+		<input type="reset" value="Reset">
+		
+	</form>
+</body>
+</html>
