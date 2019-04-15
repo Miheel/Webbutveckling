@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
 <head>
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<link href="Style/Style.css" rel="stylesheet" type="text/css">
 	<link href="Style/infoStyle.css" rel="stylesheet" type="text/css">
+	<script src="https://mcapi.us/scripts/minecraft.js"></script>
+	<script src="js/MC_ServerStatus.js"></script>
 	<link href="Resources/C_icon.ico" rel="shortcut icon" type="image/x-icon">
-	<script src="https://mcapi.us/scripts/minecraft.js">
-	</script>
-	<script src="js/comp.js">
-	</script>
 	<title>info</title>
 </head>
 <body>
@@ -41,32 +39,12 @@
 			</nav>
 		</header>
 		<section>
-			<div class="server-status">
-				<img class="" id="status" style="height:20px;width:20px;"> My awesome server is currently <span class="server-online" id="statusMsg"></span>!
+			<div class="side">
+				<div class="server-status">
+					<img alt="server status mark" class="" id="status" src="Resources/Yellow_exclamation_point.png" style="height:20px;width:20px;"> The server is currently <span class="server-online" id="statusMsg"></span>!
+				</div>
 			</div>
-			<script> 
-			MinecraftAPI.getServerStatus('StarMC.ddns.net', {
-				port: 25565 // optional, only if you need a custom port
-			}, function(err, status) {
-				if (err) {
-					return document.querySelector('.server-status').innerHTML = 'Error loading status';
-				}
-				// you can change these to your own message!
-				document.querySelector('.server-online').innerHTML = status.online ? 'up' : 'down';
-				
-				var status_ = 0;
-				
-				if (status.online === true) {
-					status_ = "up";
-				} else if (status.online === false) {
-					status_ = "down";
-				} else {
-					status_ = "err";
-				}
-				
-				comp(status_);
-			});
-			</script>
+			<div class="info_wrapper"></div>
 		</section>
 		<footer class="Bottom">
 			<div class="copy">
