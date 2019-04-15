@@ -1,11 +1,12 @@
 .hub_wrapper {
+	max-width: 100%;
+
 	text-align: center;
 	/*Center the icons*/
-	position:absolute;
+	position: absolute;
 	top: 50%;
 	transform: translate(-50%, -50%);
 	left: 50%;
-	
 }
 .hub {
 	display: inline-block;
@@ -27,11 +28,11 @@ img {
 	opacity: 0.6;
 }
 .hub_btn {
-	width: 150px;
+	max-width: 150px;
 	height: 150px;
 }
 .txt {
-	width: 100px;
+	max-width: 100px;
 	height: 28px;
 }
 .hub_btn:hover, .txt:hover {
@@ -39,7 +40,8 @@ img {
 	opacity: 1;
 	transition: .5s ease;
 }
-.title_btn {
+.title_ico {
+	border: 1px solid red;
 	width: auto;
 	height: auto;
 }

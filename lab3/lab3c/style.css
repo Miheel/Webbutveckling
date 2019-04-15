@@ -1,0 +1,26 @@
+body, form, .row, .col{
+	text-align:center;
+	padding:10px;	
+}
+form, .row, .radio>label{
+	display:inline-block;
+}
+.col{
+	text-align:left;
+	float:left;	
+}
+form{
+	border: 1px solid black;
+	background-color:#f1f1f1;
+	box-shadow:2px 2px 4px #333333;
+}
+label{
+	display:block;
+	padding:5px 0 0 0;
+}
+.radio{
+	margin: 5px 0 0 0;
+}
+.req_aster{
+	color: #ff0000
+}
