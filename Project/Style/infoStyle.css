@@ -20,7 +20,65 @@ except the space occupied by and give it overflow:hidden.side*/
 
 .side {
 	max-width: 250px;
+	overflow: hidden;/*------------Clearfix------------*/
+/*------------float problems------------*/
+
+.staff::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.side, .staff_wrapper, .mode_wrapper, .info_wrapper {
+	min-height: 100vh;
+	min-width: 250px;
+	background: inherit;
+	border: inherit;
+	padding: inherit;
+	margin: 5px;
+}
+/* "block formatting context" (BFC) make .side a float
+and let .staff_wrapper de an ordinary block  taking up all available space
+except the space occupied by and give it overflow:hidden.side*/
+
+.side {
+	max-width: 250px;
 	overflow: hidden;
+	float: left;
+}
+.staff_wrapper, .mode_wrapper, .info_wrapper {
+	text-align: center;
+	overflow: hidden;
+}
+.modes {
+	text-align: center;
+}
+.survival, .creative {
+	margin-top: 50px;
+	max-width: 100%;
+	height: auto;
+}
+.status_up {
+	content: url("../Resources/Green_check.png");
+}
+.status_down {
+	content: url("../Resources/Red_cross.png");
+}
+.staff_outer {
+	background-color: #333333;
+	border-radius: 5px 5px 5px 5px;
+	display: inline-block;
+	min-width: 250px;
+	max-width: 250px;
+	text-align: center;
+	padding-top: 10px;
+	margin: 10px 10px;
+}
+.staff_inner {
+	background-color: #111111;
+	border-radius: 0 0 5px 5px;
+	text-align: left;
+	padding: 10px 10px;
+}
 	float: left;
 }
 .staff_wrapper, .mode_wrapper, .info_wrapper {

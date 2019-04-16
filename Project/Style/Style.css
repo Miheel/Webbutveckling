@@ -89,24 +89,29 @@ section {
 	min-height: 100vh;
 	text-align:center;
 }
-.gallery_wrapper, .galleryitem, .galleryimg, .imgtext{
-
-	margin:5px;
+.gallery_wrapper, .galleryitem, .galleryimg{
+	margin:10px 10px 0 10px;
 }
 .galleryitem{
 	float:left;
-	padding:5px;
 	max-width:200px;
+	border-radius:5px 5px 5px 5px;
+	background: #333333;
 }
 .img{
 	max-width:100%;
 	height:auto;
+
 }
 .zoom {
   transition: transform .2s;
 }
 .zoom:hover {
   transform: scale(2.5); 
+}
+.imgtext{
+	background:#000000;
+	border-radius:0 0 5px 5px;
 }
 /*clearfix*/
 .gallery_wrapper::after{

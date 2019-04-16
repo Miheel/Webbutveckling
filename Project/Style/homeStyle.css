@@ -1,6 +1,5 @@
 .hub_wrapper {
 	max-width: 100%;
-
 	text-align: center;
 	/*Center the icons*/
 	position: absolute;
@@ -41,7 +40,6 @@ img {
 	transition: .5s ease;
 }
 .title_ico {
-	border: 1px solid red;
 	width: auto;
 	height: auto;
 }
