@@ -20,7 +20,9 @@ except the space occupied by and give it overflow:hidden.side*/
 
 .side {
 	max-width: 250px;
-	overflow: hidden;/*------------Clearfix------------*/
+	overflow: hidden;
+}
+/*------------Clearfix------------*/
 /*------------float problems------------*/
 
 .staff::after {
