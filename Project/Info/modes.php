@@ -17,18 +17,18 @@
 			<nav>
 				<ul class="menu">
 					<li class="menuI">
-						<a href="../home.html">Home</a>
+						<a href="../home.php">Home</a>
 					</li>
 					<li class="menuI">
-						<a href="../gallery.html">Gallery</a>
+						<a href="../gallery.php">Gallery</a>
 					</li>
 					<li class="menuI">
-						<a href="../contact.html">Contact</a>
+						<a href="../contact.php">Contact</a>
 					</li>
 					<li class="dropdown menuI">
-						<a class="dropbtn" href="../info.html">Info</a>
+						<a class="dropbtn" href="info.php">Info</a>
 						<div class="dropdown-content">
-							<a href="modes.html">Modes</a> <a href="staff.html">Staff</a>
+							<a href="modes.php">Modes</a> <a href="staff.php">Staff</a>
 						</div>
 					</li>
 					<li class="menuI">
@@ -38,6 +38,7 @@
 				</ul>
 			</nav>
 		</header>
+		
 		<section>
 			<div class="side">
 				<div class="server-status">
@@ -56,11 +57,8 @@
 				</div>
 			</div>
 		</section>
-		<footer class="Bottom">
-			<div class="copy">
-				<p>© corcon</p>
-			</div>
-		</footer>
+		
+		<?php include '../php/footer.php';?>
 	</div>
 </body>
 </html>

@@ -12,32 +12,8 @@
 </head>
 <body>
 	<div class="body">
-		<header>
-			<img alt="LOGGO" class="loggo" src="Resources/Coat_of_Arms.png">
-			<nav>
-				<ul class="menu">
-					<li class="menuI">
-						<a href="home.html">Home</a>
-					</li>
-					<li class="menuI">
-						<a href="gallery.html">Gallery</a>
-					</li>
-					<li class="menuI">
-						<a href="contact.html">Contact</a>
-					</li>
-					<li class="dropdown menuI">
-						<a class="dropbtn" href="info.html">Info</a>
-						<div class="dropdown-content">
-							<a href="Info/modes.html">Modes</a> <a href="Info/staff.html">Staff</a>
-						</div>
-					</li>
-					<li class="menuI">
-						<a href="https://discord.gg/ETVMdrS">Discord</a>
-					</li>
-					<li class="ip">IP: StarMC.ddns.net</li>
-				</ul>
-			</nav>
-		</header>
+		<?php include 'php/menu.php';?>
+		
 		<section>
 			<div class="side">
 				<div class="server-status">
@@ -46,11 +22,9 @@
 			</div>
 			<div class="info_wrapper"></div>
 		</section>
-		<footer class="Bottom">
-			<div class="copy">
-				<p>© corcon</p>
-			</div>
-		</footer>
+		
+		<?php include 'php/footer.php';?>
+		
 	</div>
 </body>
 </html>
