@@ -1,0 +1,31 @@
+form{
+	background-color:#333333;
+	box-shadow:2px 2px 4px #333333;	
+	text-align:center;
+}
+form, .row, .col, .bot{
+	padding:10px;
+}
+form, .row{
+	display:inline-block;
+}
+.col{
+	text-align:left;
+	float:left;	
+}
+.col::after{
+	content:"";
+	clear:both;
+	display:table;
+}
+.bot{
+	display:block;
+	text-align:left;
+}
+label{
+	display:block;
+	padding:10px 0 0 0;
+}
+.req_aster{
+	color: #ff0000
+}
