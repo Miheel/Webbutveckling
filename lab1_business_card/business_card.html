@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+	<!--
+	lab_1 Business card
+	Written by Miakel Leuf mile1900
+	-->
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		
+		<link href="style/style.css" rel="stylesheet" type="text/css">
+		<script src="js/pageswitch.js"></script>
+		
+		<title>Business card</title>
+	</head>
+	
+	<body>
+		<div class="centerpage" id="page1">
+			<h1>Get your business card</h1>
+	
+			<form id="myForm" name="myForm">
+				<label for="in_company"><span class="req_aster">*</span> Company........</label>
+				<input autofocus="" class="in_field" id="in_company" name="company" placeholder="Companyname" required="" type="text"><br>
+	
+				<label for="in_foreName"><span class="req_aster">*</span> ForeName........</label>
+				<input class="in_field" id="in_foreName" name="foreName" placeholder="Anders" required="" type="text"><br>
+	
+				<label for="in_surname"><span class="req_aster">*</span> SurName........</label>
+				<input class="in_field" id="in_surname" name="surname" placeholder="Andersson" required="" type="text"><br>
+	
+				<label for="in_title"><span class="req_aster">*</span> Title........</label>
+				<input class="in_field" id="in_title" name="title" placeholder="Title" required="" type="text"><br>
+	
+				<label for="in_phone"><span class="req_aster">*</span> Phone........</label>
+				<input class="in_field" id="in_phone" name="phone" placeholder="070 123 4567" required="" type="text"><br>
+	
+				<label for="in_email"><span class="req_aster">*</span> Email........</label>
+				<input class="in_field" id="in_email" name="email" placeholder="email@domain.com" required="" type="text"><br>
+	
+				<label for="backgroundscolor">Backgroundscolor</label> <select class="in_field" id="backgroundscolor" name="backgroundscolor">
+					<option value="#add8e6">
+						Lightblue
+					</option>
+	
+					<option value="#ffffed">
+						Lightyellow
+					</option>
+	
+					<option value="#ffffff">
+						White
+					</option>
+	
+					<option value="#00FFFF">
+						Aqua
+					</option>
+				</select><br>
+				
+				<label for="textcolor">Textcolor........</label> 
+				<select class="in_field" id="textcolor" name="textcolor">
+					<option value="#000000">
+						Black
+					</option>
+	
+					<option value="#0000ff">
+						Blue
+					</option>
+	
+					<option value="#ff0000">
+						Red
+					</option>
+	
+					<option value="#004d00">
+						Dark green
+					</option>
+				</select><br>
+				
+				<label for="font">Font........</label> 
+				<select class="in_field" id="font" name="font">
+					<option value="Verdana">
+						Verdana
+					</option>
+	
+					<option value="Arial">
+						Arial
+					</option>
+	
+					<option value="Tahoma">
+						Tahoma
+					</option>
+	
+					<option value="Impact">
+						Impact
+					</option>
+				</select><br>
+	
+	
+				<div id="btns">
+					<input type="submit" value="Submit">
+					<input type="reset" value="Reset">
+				</div>
+			</form>
+		</div>
+	
+		<div class="centerpage" id="page2">
+			<span id="company" style="font-size:300%"></span><br>
+			<span id="name" style="font-size:150%"></span><br>
+			<span id="title" style="font-size:100%"></span><br>
+			<br>
+			<span id="phone" style="font-size:150%"></span><br>
+			<span id="email" style="font-size:100%"></span>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,9 @@
+*.txt
+*.docx
+*.pdf
+*.pptx
+*.jpg
+ltu.*
+lab1/*
+lab4/Raport/*
+lab4/Peer Review/*
