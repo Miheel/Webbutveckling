@@ -1,0 +1,41 @@
+.welcomeSection{
+    width: inherit;
+    min-height: inherit;
+    margin: inherit;
+    padding: inherit;
+    max-width: inherit;
+    text-align: center;
+
+}
+
+.welcome{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#welcomeHeader{
+    font-size: 50px;
+}
+p{
+    margin: 40px 0;
+    padding: 5px 5px;
+}
+#joinBtn{
+    color: #ffffff;
+    background: none;
+    border: 2px solid #3498db;
+    border-radius: 25px;
+    margin: 40px 0px;
+    padding: 15px 40px;
+    transition: 0.25s;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;    
+}
+
+#joinBtn:hover{
+    background: #3498db;
+    color: #000000;
+}

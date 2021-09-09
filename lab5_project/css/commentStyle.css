@@ -1,0 +1,29 @@
+/****************GUEST FORM****************/
+#guestMessageIN, .editmsg{
+	width: 100%;
+	height: 8em;
+	margin: auto;
+	background-color: #333333;
+}
+.editmsg, .editSendbtn{
+	display: none;
+}
+/****************POSTS****************/
+.post{
+	background: #333333;
+	margin: 10px;
+	padding: 10px;
+}
+.author, .message{
+	display: inline-block;
+	margin-top: 0;
+	margin-bottom: 15px;	
+}
+.message{
+	margin-left: 20px;
+}
+.timeStamp{
+	display: block; 
+	text-align: right;
+	font-size: small;
+}

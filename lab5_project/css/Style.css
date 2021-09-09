@@ -1,0 +1,168 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-image: url("../resources/Background.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	color: #ffffff;
+	font-family: "Noto Sans", sans-serif, Arial, Helvetica;
+}
+p{
+	font-size: 16px;
+}
+
+/****************MENU****************/
+#menuContainer{
+	position:relative;
+	height: 40px;
+	margin:5px;
+}
+.menu{
+	list-style-type: none;
+	background-color: #333333;
+	overflow: hidden;
+	margin: auto;
+	padding: 0;
+	width: 96%;
+	max-width: 960px;
+}
+.menuI{
+	float: left;
+}
+.menuI:hover, .navbtn:hover, .menuOpt.dropOpt:hover{
+	background: #111111;
+}
+.profileico{
+	float: right;
+}
+
+#droppdown-menu{
+    display: none;
+    position: absolute;
+    background-color: #333333;
+    box-shadow: 1px 1px 5px #333333;
+    z-index: 1;	
+}
+
+.profileico:hover #droppdown-menu, .menuOpt.dropOpt{
+	display: block;
+}
+
+.menuOpt{
+	display: inline-block;
+}
+.menuOpt, .navbtn span{
+	padding: 10px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.navbtn{
+	display:none;
+}
+/****************MAIN****************/
+.mainContainer{
+	width: 96%;
+	min-height: 90vh;
+	margin: 1em auto;
+	padding: 10px; 
+	max-width: 960px;
+}
+
+section{
+	position: relative;
+	padding: 5px 10px;
+	min-height: inherit;
+
+}
+
+.pokeWrapper{
+	float: left;
+	margin: 20px;
+	width: 200px;
+	height: 200px;
+	text-align: center;
+}
+
+.sprite{
+	margin: 3%;
+	max-width: 100%;
+	max-height: auto;
+}
+
+.spriteName{
+	padding: 5px 0px;
+}
+
+/****************LOGIN FORM****************/
+#loginForm{
+	background: #333333;
+	position:absolute;
+	padding: 5px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+#userlabel, #passlabel, .loginIn, .submitBtn, 
+#guestMessage, #guestMessageIN{
+	margin: 10px;
+}
+#userlabel, #passlabel, #guestMessage{
+	display:block;
+	float:left;
+}
+.loginIn{
+  display: block;
+  float: right;
+}
+
+.submitBtn{
+	float: left;
+}
+
+/****************MEDIA QUERIES****************/
+@media screen and (max-width: 600px){
+	.mainContainer{
+		width: 100%;
+	}
+	.menu .menuI:not(:first-child){
+		display:none;
+	}
+	.navbtn{ 
+		display: block;
+		float: right;
+	}
+	#menuBar{
+		display:block;
+		width: 100%;
+		position:absolute;
+		z-index:1;
+	}
+}
+@media screen and (max-width: 600px){
+	.menu.showMenu, #droppdown-menu{
+		position: relative;
+		z-index: 1;
+	}
+	.menu.showMenu .navbtn {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.menu.showMenu .menuI{
+		float:none;
+		display: block;
+	}
+	
+	.menu.showMenu .menuOpt, .menu.showMenu .menuI #droppdown-menu .menuOpt.dropOpt{
+		display: block;
+	}
+
+	.menu.showMenu .menuI #droppdown-menu{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+}
